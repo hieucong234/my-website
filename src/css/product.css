@@ -1,0 +1,737 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin: 0px;
+}
+
+#header {
+    display:block;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+}
+
+.backgroundheader {
+    background-color: rgb(43, 43, 43);
+    width: 900px;
+    height: 70px;
+    margin-left: 280px;
+}
+
+.logo .titilelogo {
+    color: white;
+    font-size: 35px;
+    margin-top: 28px;
+}
+
+
+.logo .phudelogo {
+    color: white;
+    font-size: 15px;
+    margin-top: -35px;
+}
+
+.logo {
+    margin-top: -95px;
+    margin-left: 310px;
+}
+
+.menuheader a {
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+}
+
+.menuheader a:hover {
+    color: rgb(162, 162, 162);
+}
+
+.menuheader {
+    margin-left: 625px;
+    margin-top: -53px;
+}
+
+
+#footer {
+    background-color: rgb(43, 43, 43);
+    width: 900px;
+    height: 290px;
+    margin-left: 280px;
+    margin-top: 1350px;
+}
+
+.footerchia{
+    width: 100%;
+    float: left;
+    display: flex;
+}
+
+.footer1 {
+    width: 30%;
+    height:290px;
+}
+
+.info{
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 25px;
+    color: white;
+    font-size: 19px;
+}
+
+.footer1 .diachi{
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 50px;
+    color: white;
+    position: relative;
+    top: -40px;
+}
+
+.footer1 .sdt{
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 50px;
+    color: white;
+    position: relative;
+    top: -80px;
+}
+
+.footer1 .email{
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 50px;
+    color: white;
+    position: relative;
+    top: -124px;
+}
+
+#icon1{
+    color: white; 
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+ #icon2{
+    font-size:22px; 
+    color: white; 
+    margin-left: 20px;
+    position: relative;
+    top: -40px;
+}
+
+#icon3 {
+    font-size:22px; 
+    color: white;
+    margin-left: 20px;
+    position: relative;
+    top: -80px;
+}
+
+.footer2 {
+    width: 30%;
+    height:290px;
+    margin-left: 48px;
+}
+
+.chiadoc {
+    display: flex;
+    flex-direction: column;
+}
+
+.chiadoc a {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 25px;
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.2s ease;
+}
+.chiadoc a:hover{
+    opacity: 50%;
+}
+.footer3 {
+    width: 30%;
+    height:290px;
+    margin-left: 50px;
+}
+.moit {
+    width: 50%;
+}
+.moit img{
+    width: 17%;
+    height: 16%;
+    margin-top: -140px;
+    margin-left: 200px;
+}
+
+.thanhtoan {
+    width: 55%;
+}
+
+.thanhtoan img {
+    margin-top: -65px;
+    position: absolute;
+    margin-left: 400px;
+
+}
+
+.open-button {
+    background-color:white;
+    color: rgb(0, 0, 0);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 70px;
+    border-radius: 45px;
+  }
+  
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color:#535353;
+    color: rgb(0, 0, 0);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color:#cbc9c9;
+    border-radius: 10px;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+.titlechat {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+.mgs {
+    font-family: 'Roboto', sans-serif;
+    color: #6a6868;
+}
+
+#main{
+    background-color: rgb(43, 43, 43);
+    width: 900px;
+    height: 590px;
+    margin-left: 280px;
+    margin-top: 110px;
+}
+
+.product {
+    width: 100%;
+    float: left;
+    display: flex;
+}
+
+.mediasp {
+    width: 40%;
+
+}
+
+.imgsp img{
+    width: 335px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: 3px solid #f5e6e6df; /* Viền dày 5px, màu đen */
+    border-radius: 10px;
+}
+
+
+.assess{
+    color: white;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-left: 25px;
+}
+
+.infosp {
+    width: 60%;
+}
+
+.namesp {
+    color: white;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.numberbuy {
+    color: white;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    margin-left: 30px;
+    opacity: 80%;
+}
+
+
+.rate {
+    color: white;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+.discount {
+    color: white;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    margin-left: 30px;
+    opacity: 80%;
+}
+
+.number {
+    color: white;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.buy {
+    width: 100%;
+    display: flex;
+    float: left;
+    margin-top: 15px;
+}
+
+.themgiohang {
+    width: 50%;
+}
+
+.themgiohang p {
+    color: rgb(43, 43, 43);
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    margin-top: 6px;
+    margin-left: 60px;
+    background-color: #cbc9c9;
+    width: 180px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.mua p{
+    color: rgb(43, 43, 43);
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    margin-top: 6px;
+    background-color: #cbc9c9;
+    width: 220px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+
+.mua p:hover{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    border: 0.5px solid rgb(133, 132, 132);
+    cursor: pointer;
+}
+
+
+.themgiohang p:hover{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    border: 0.5px solid rgb(133, 132, 132);
+    cursor: pointer;
+}
+
+.splq {
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    height: 100px;
+    padding-top: 615px;
+}
+
+.splq p {
+    color: white;
+    font-size: 22px;
+}
+
+
+.QLiXDZrow {
+    width: 100%;
+    height: 300px;
+}
+
+
+.sp1 {
+    width: 30%;
+    float: left;
+    border: 1px solid rgb(226, 225, 225);
+}
+
+.sp1:hover {
+    border: 1px solid rgb(133, 132, 132);
+}
+
+.captionsp1{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sp1 img {
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 26px;
+}
+
+.tensanpham1 {
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+.giatien {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px; 
+    margin-top: -3px;
+    padding-left: 26px;
+}
+
+
+.daban {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px; 
+    margin-top: -30px;
+    padding-left: 176px;
+}
+
+
+
+.sp2 {
+    width: 30%;
+    float: left;
+    border: 1px solid rgb(226, 225, 225);
+    margin-left: 42px;
+}
+
+.sp2:hover {
+    border: 1px solid rgb(133, 132, 132);
+}
+
+.captionsp2{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sp2 img {
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 26px;
+}
+
+.tensanpham2 {
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+
+
+.sp3 {
+    width: 30%;
+    float: left;
+    border: 1px solid rgb(226, 225, 225);
+    margin-left: 42px;
+}
+
+.sp3:hover {
+    border: 1px solid rgb(133, 132, 132);
+}
+
+.captionsp3{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sp3 img {
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 26px;
+}
+
+.tensanpham3 {
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+
+.sp4 {
+    width: 30%;
+    float: left;
+    border: 1px solid rgb(226, 225, 225);
+    margin-top: 30px;
+}
+
+.sp4:hover {
+    border: 1px solid rgb(133, 132, 132);
+}
+
+.captionsp4{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sp4 img {
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 26px;
+}
+
+.tensanpham4 {
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+
+
+.sp5 {
+    width: 30%;
+    float: left;
+    border: 1px solid rgb(226, 225, 225);
+    margin-top: 30px;
+    margin-left: 42px;
+}
+
+.sp5:hover {
+    border: 1px solid rgb(133, 132, 132);
+}
+
+.captionsp5{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sp5 img {
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 26px;
+}
+
+.tensanpham5 {
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+
+.sp6 {
+    width: 30%;
+    float: left;
+    border: 1px solid rgb(226, 225, 225);
+    margin-top: 30px;
+    margin-left: 42px;
+}
+
+.sp6:hover {
+    border: 1px solid rgb(133, 132, 132);
+}
+
+.captionsp6{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sp6 img {
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 26px;
+}
+
+.tensanpham6 {
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+
+.sp7 {
+    width: 30%;
+    float: left;
+    border: 1px solid rgb(226, 225, 225);
+    margin-top: 30px;
+}
+
+.sp7:hover {
+    border: 1px solid rgb(133, 132, 132);
+}
+
+.captionsp7{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sp7 img {
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 26px;
+}
+
+.tensanpham7 {
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+
+.sp8 {
+    width: 30%;
+    float: left;
+    border: 1px solid rgb(226, 225, 225);
+    margin-top: 30px;
+    margin-left: 42px;
+}
+
+.sp8:hover {
+    border: 1px solid rgb(133, 132, 132);
+}
+
+.captionsp8{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sp8 img {
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 26px;
+}
+
+.tensanpham8 {
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+
+.sp9 {
+    width: 30%;
+    float: left;
+    border: 1px solid rgb(226, 225, 225);
+    margin-top: 30px;
+    margin-left: 42px;
+}
+
+.sp9:hover {
+    border: 1px solid rgb(133, 132, 132);
+}
+
+.captionsp9{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sp9 img {
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 26px;
+}
+
+.tensanpham9 {
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
